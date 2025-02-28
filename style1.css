@@ -65,30 +65,29 @@ a{
 
 /* photo start as a main content */
 .main-container{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
-    object-fit: contain;
 }
 .col{
-    height:15%;
+    height:100%;
     width:100%;
     background-color: bisque;
 
 }
 
 .col h3{
-    padding:10px;
+    padding:5px;
 
 }
 
 .col img{
-    height:20%;
+    height:70%;
     width:100%;
 }
 
 .col:hover{
-    height:16%;
+    height:100%;
     width:101%;
     background-color: rgb(178, 174, 168);
 }
@@ -105,5 +104,16 @@ h3 a{
     padding:10px;
     width:100%;
     background-color: rgb(162, 174, 183);
-
+}
+.page-number{
+    height:10%;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+}
+.page-number h3{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:rgb(255, 255, 255);
 }
